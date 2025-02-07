@@ -117,3 +117,22 @@ for i in range(len(find_list)):
   res_1 = res_1.replace(find_list[i], repl_list[i])
 print(f"What you wrote: {resp_4}")
 print(f"What was encoded: {res_1}")
+
+
+def removeDuplicates(nums):
+  """
+  :type nums: List[int]
+  :rtype: int
+  """
+  unique_nums = list(set(nums))
+  new_nums = unique_nums
+  nums = new_nums + [1] * (len(nums) - len(new_nums))
+  return len(new_nums), nums
+
+print(removeDuplicates([1,2,2,2,3,4,5,6,6,6]))
+
+x = [1, 2, 3]
+print(x[1])
+
+
+

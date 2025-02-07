@@ -1,0 +1,5 @@
+Hello, this is a text file for input/output practice.
+It contains multiple lines.
+You can read and manipulate it using Python.
+Helloh
+Hello
