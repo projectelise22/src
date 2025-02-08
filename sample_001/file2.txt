@@ -1,3 +1,0 @@
-This is a sample text.
-This is the second line.
-This is a different third line.
