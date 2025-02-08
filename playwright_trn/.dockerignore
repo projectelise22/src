@@ -1,0 +1,6 @@
+codewars
+.pytest_cache
+.vscode
+pytest_trn
+python_refresher
+sync_playwright

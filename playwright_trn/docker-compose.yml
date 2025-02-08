@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    image: httpd:latest
+    volumes:
+      - ./index.html:/usr/local/apache2/htdocs/index.html
+    ports:
+      - "3000:80"
+
+  tests:
+    build: .
+    depends_on:
+      - web
