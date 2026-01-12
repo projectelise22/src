@@ -1,0 +1,21 @@
+1. Use pip freeze to write all the packages in the current environment 
+   to specified text file (requirements.txt in this case)
+
+2. app/ folder contains the source code for the application used
+   tests/ folder contains all the tests using pytest
+   - add __init__.py in under app/ for it to be seen as a package
+
+3. Using pytest
+   - all test files under tests/ folder SHOULD START with test_
+   - all test functions in the test files SHOULD START with test_
+   - pytest will not be able to find the tests if the above conditions are not met
+
+   - use assert to compare the actual and expected value:
+     assert (function returning the actual value) == expected value (set by QA)
+   - if assert passes, test passes otherwise it fails
+
+   - run the tests by invoking "pytest" in the command line
+   
+4. pytest.ini contains project-level rules for running tests
+   - added the path in this file so it will not have an error looking for the packages used while testing
+     
