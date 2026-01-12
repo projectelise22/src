@@ -19,3 +19,4 @@
 4. pytest.ini contains project-level rules for running tests
    - added the path in this file so it will not have an error looking for the packages used while testing
      
+5. Use verbose to see status of each test by adding -v in command 
