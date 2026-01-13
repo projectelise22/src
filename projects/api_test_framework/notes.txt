@@ -1,0 +1,9 @@
+1. Important fields in checking API: headers and body
+2. To check the headers and body of the API:
+    - print(response.headers)
+3. Use fixtures (test helpers), configuration for the tests
+    - for handling common test data
+    - base url, API clients
+    - test setup and teardown
+    - perfect for reusing tests and test data
+4. fixture with scope="session" means it is created once and is available for the whole test run

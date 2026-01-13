@@ -15,6 +15,6 @@ def mul(n1, n2)->int:
 
 # Division
 def div(n1, n2)->int:
-    if n1 == 0: 
+    if n2 == 0: 
         raise ValueError("Cannot divide any number by 0!")
     return (n1 / n2)
