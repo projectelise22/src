@@ -14,6 +14,7 @@ It is designed to demonstrate **API testing fundamentals**, **pytest best practi
 ---
 
 ## 📂 Project Structure
+```bash
 api_test_framework/
 ├── api
 │ └── users_api.py # API client functions
@@ -25,6 +26,7 @@ api_test_framework/
 ├── pytest.ini # Pytest configuration
 ├── requirements.txt # Project dependencies
 └── README.md
+```
 
 ---
 
