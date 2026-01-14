@@ -1,7 +1,7 @@
 # API Test Framework (Pytest)
 
 This project is a simple but structured **API Test Automation Framework** built using **Python** and **Pytest**.  
-It is designed to demonstrate **API testing fundamentals**, **pytest best practices**, and **clean test organization** suitable for QA portfolio and real-world projects.
+It is designed to demonstrate **API testing fundamentals**, **pytest best practices**, and **clean test organization**.
 
 ---
 
@@ -57,20 +57,30 @@ api_test_framework/
 python -m venv .venv
 source .venv/bin/activate   # macOS/Linux
 .venv\Scripts\activate      # Windows
+```
 
 ### 2️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 2️⃣ Running the Tests
 Run all tests:
+```bash
 pytest
+```
 
 Run with verbose output:
+```bash
 pytest -v
+```
 
 Run specific markers(if added):
+```bash
 pytest -m smoke
 pytest -m negative
+```
+
 
 ## 🧩 Fixtures Used
 
@@ -80,9 +90,11 @@ Fixtures are defined in conftest.py and provide:
 - Cleaner test functions
 
 ## 📌 Sample Test Case
+```python
 @pytest.mark.parametrize("user_id", [1, 2, 3, 4, 5])
 def test_get_user_by_id(base_url, user_id):
     response = get_user_by_id(base_url, user_id)
 
     assert response.status_code == 200
     assert response.json()["id"] == user_id
+```
